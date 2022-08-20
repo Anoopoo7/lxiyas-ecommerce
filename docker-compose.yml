@@ -1,0 +1,10 @@
+version: '3'
+services:
+  cas-server:
+    build: ./cas
+    ports:
+      - 8080:8080
+  user-services:
+    build: ./userMicroservice
+    ports:
+      - 8071:8071
